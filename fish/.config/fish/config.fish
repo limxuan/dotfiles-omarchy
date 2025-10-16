@@ -38,3 +38,5 @@ starship init fish | source
 mkdir -p $XDG_CONFIG_HOME/fish/completions
 mkdir -p $XDG_CONFIG_HOME/fish/functions
 mkdir -p $XDG_CONFIG_HOME/fish/conf.d
+
+source ~/.config/scripts/init-ssh-agent.fish
