@@ -9,7 +9,7 @@ return {
     "CodeiumManual",
   },
   event = "BufEnter",
-  enabled = false,
+  enabled = true,
   dependencies = {
     "AstroNvim/astrocore",
     ---@type AstroCoreOpts
