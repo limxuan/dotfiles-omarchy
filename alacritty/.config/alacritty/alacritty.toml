@@ -20,5 +20,7 @@ args = ["--login", "-c", "source ~/.config/fish/config.fish; exec fish"]
 
 [keyboard]
 bindings = [
-{ key = "F11", action = "ToggleFullscreen" }
+{ key = "F11", action = "ToggleFullscreen" },
+{ key = "Insert", mods = "Shift", action = "Paste" },
+{ key = "Insert", mods = "Control", action = "Copy" }
 ]

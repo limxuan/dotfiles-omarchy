@@ -81,21 +81,3 @@ tooltip {
 #custom-screenrecording-indicator.active {
   color: #a55555;
 }
-
-/* ─────────────────────────────
-   Custom: Fullscreen Indicator
-   ───────────────────────────── */
-#custom-fullscreen.fullscreen {
-  color: @foreground;
-  background-color: @background;
-  border: 0.3px solid @foreground;
-  padding: 0 5px;
-  margin: 4 10px;
-  border-radius: 5px;
-}
-
-#custom-fullscreen.normal {
-  color: transparent;
-  padding: 0;
-  margin: 0;
-}
