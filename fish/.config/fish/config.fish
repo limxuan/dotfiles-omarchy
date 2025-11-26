@@ -40,3 +40,5 @@ mkdir -p $XDG_CONFIG_HOME/fish/functions
 mkdir -p $XDG_CONFIG_HOME/fish/conf.d
 
 source ~/.config/scripts/init-ssh-agent.fish
+
+set -Ux JAVA_HOME /usr/lib/jvm/java-25-openjdk
