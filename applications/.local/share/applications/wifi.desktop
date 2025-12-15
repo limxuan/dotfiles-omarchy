@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=wifi
+Comment=open wifi TUI
+Exec= omarchy-launch-wifi

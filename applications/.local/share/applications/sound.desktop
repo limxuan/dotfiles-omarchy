@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=sound
+Comment=open sound tui
+Exec= omarchy-launch-or-focus-tui wiremix

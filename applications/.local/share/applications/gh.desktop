@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=gh
+Comment=gh
+Exec=omarchy-launch-webapp https://github.com/limxuan/omarchy-config/tree/83401e462c8dbc4a8906dd8898e618f949233f86/omarchy
+Terminal=false
+Type=Application
+Icon=/home/limxuan/.local/share/applications/icons/gh.png
+StartupNotify=true

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Typeracer
+Comment=Typeracer
+Exec=omarchy-launch-webapp https://play.typeracer.com/
+Terminal=false
+Type=Application
+Icon=/home/limxuan/.local/share/applications/icons/Typeracer.png
+StartupNotify=true

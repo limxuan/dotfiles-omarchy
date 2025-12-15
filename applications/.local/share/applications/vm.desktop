@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=vm-manager
+Comment=Virtual Machine Manager
+Exec= /usr/bin/python3.13 /usr/bin/virt-manager
+Terminal=false
+Type=Application
