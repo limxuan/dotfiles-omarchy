@@ -11,4 +11,8 @@ return {
     "nvim-notify",
     enabled = false,
   },
+  {
+    "blink.cmp",
+    enabled = false,
+  },
 }
