@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
-Name=Discord
-Comment=Discord
-Exec=omarchy-launch-webapp https://discord.com/app
+Name=Vesktop
+Comment=Discord client
+Exec=vesktop
 Terminal=false
 Type=Application
 Icon=/home/limxuan/.local/share/applications/icons/Discord.png
