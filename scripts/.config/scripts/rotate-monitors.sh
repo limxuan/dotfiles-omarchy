@@ -1,13 +1,22 @@
 #!/bin/bash
+
 monitor="eDP-1"
-current=$(hyprctl monitors -j | jq -r ".[] | select(.name==\"$monitor\") | .transform")
+res="1920x1080@60.01"
+pos="0x0"
+
+current=$(hyprctl monitors -j \
+  | jq -r ".[] | select(.name==\"$monitor\") | .transform // 0")
+current=$((current))
+
+scale=$(hyprctl monitors -j \
+  | jq -r ".[] | select(.name==\"$monitor\") | .scale")
 
 case "$1" in
   left)
-    next=$(( (current + 3) % 4 ))  # rotate counter-clockwise
+    next=$(( (current + 3) % 4 ))
     ;;
   right)
-    next=$(( (current + 1) % 4 ))  # rotate clockwise
+    next=$(( (current + 1) % 4 ))
     ;;
   *)
     echo "Usage: $0 {left|right}"
@@ -15,4 +24,4 @@ case "$1" in
     ;;
 esac
 
-hyprctl keyword monitor "$monitor,transform,$next"
+hyprctl keyword monitor "$monitor,$res,$pos,$scale,transform,$next"
