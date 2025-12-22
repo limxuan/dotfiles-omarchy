@@ -26,6 +26,7 @@ set fish_greeting
  set -g -x NODE_ENV "development"
 set -gx EDITOR nvim
 set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx SSH_AUTH_SOCK $HOME/.bitwarden-ssh-agent.sock
 bind \cn open_nvim
 bind \co open_lazygit
 bind \cg edit_command 
@@ -39,6 +40,6 @@ mkdir -p $XDG_CONFIG_HOME/fish/completions
 mkdir -p $XDG_CONFIG_HOME/fish/functions
 mkdir -p $XDG_CONFIG_HOME/fish/conf.d
 
-source ~/.config/scripts/init-ssh-agent.fish
+# source ~/.config/scripts/init-ssh-agent.fish
 
 set -Ux JAVA_HOME /usr/lib/jvm/java-25-openjdk
