@@ -2,7 +2,7 @@
 Name=Cisco Packet Tracer 9.0.0
 Type=Application
 Categories=Education;
-Exec=/usr/lib/packettracer/packettracer.AppImage %f
+Exec=/home/limxuan/Applications/packettracer.AppImage %f
 Icon=Cisco_Packet_Tracer_9.0.0
 Terminal=false
 StartupNotify=true

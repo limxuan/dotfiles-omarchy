@@ -2,7 +2,7 @@
 Name=Cisco Packet Tracer 9.0.0 (PTSA)
 Type=Application
 Categories=Education;
-Exec=/usr/lib/packettracer/packettracer.AppImage -uri=%u
+Exec=/home/limxuan/Applications/packettracer.AppImage -uri=%u
 Icon=Cisco_Packet_Tracer_9.0.0
 Terminal=false
 StartupNotify=true
