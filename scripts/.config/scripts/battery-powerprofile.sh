@@ -29,5 +29,11 @@ case "$profile" in
     color="$omarchy_foreground"
     ;;
 esac
+# === Choose prefix based on charging status ===
+if [[ "$status" == "Charging" ]]; then
+    prefix="^"
+else
+    prefix=""
+fi
 # === Output JSON for Waybar ===
-echo "{\"text\":\"&#160;<span color='$color'>${capacity}%</span>&#160;\",\"tooltip\":\"$capacity% - $profile - $status\"}"
+echo "{\"text\":\"&#160;<span color='$color'>${prefix}${capacity}%</span>&#160;\",\"tooltip\":\"$capacity% - $profile - $status\"}"
