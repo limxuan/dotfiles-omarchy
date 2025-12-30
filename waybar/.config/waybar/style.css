@@ -99,3 +99,19 @@ tooltip {
   padding: 0;
   margin: 0;
 }
+
+/* ─────────────────────────────
+   Custom: Trackpad Indicator
+   ───────────────────────────── */
+#custom-trackpad-indicator.enabled {
+  color: #CC816E;
+  background-color: @background;
+  margin: 4 10px;
+  border-radius: 5px;
+}
+
+#custom-trackpad-indicator.disabled {
+  color: transparent;
+  padding: 0;
+  margin: 0;
+}
