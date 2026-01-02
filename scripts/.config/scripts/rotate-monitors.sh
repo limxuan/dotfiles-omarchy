@@ -1,15 +1,18 @@
 #!/bin/bash
-
 monitor="eDP-1"
-res="1920x1080@60.01"
 pos="0x0"
 
-current=$(hyprctl monitors -j \
-  | jq -r ".[] | select(.name==\"$monitor\") | .transform // 0")
+# Get current monitor info
+monitor_info=$(hyprctl monitors -j | jq -r ".[] | select(.name==\"$monitor\")")
+current=$(echo "$monitor_info" | jq -r ".transform // 0")
 current=$((current))
+scale=$(echo "$monitor_info" | jq -r ".scale")
 
-scale=$(hyprctl monitors -j \
-  | jq -r ".[] | select(.name==\"$monitor\") | .scale")
+# Dynamically get current resolution and refresh rate
+width=$(echo "$monitor_info" | jq -r ".width")
+height=$(echo "$monitor_info" | jq -r ".height")
+refresh=$(echo "$monitor_info" | jq -r ".refreshRate")
+res="${width}x${height}@${refresh}"
 
 case "$1" in
   left)
