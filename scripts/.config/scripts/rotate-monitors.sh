@@ -1,4 +1,5 @@
 #!/bin/bash
+
 monitor="eDP-1"
 pos="0x0"
 
@@ -8,7 +9,6 @@ current=$(echo "$monitor_info" | jq -r ".transform // 0")
 current=$((current))
 scale=$(echo "$monitor_info" | jq -r ".scale")
 
-# Dynamically get current resolution and refresh rate
 width=$(echo "$monitor_info" | jq -r ".width")
 height=$(echo "$monitor_info" | jq -r ".height")
 refresh=$(echo "$monitor_info" | jq -r ".refreshRate")
@@ -27,4 +27,8 @@ case "$1" in
     ;;
 esac
 
-hyprctl keyword monitor "$monitor,$res,$pos,$scale,transform,$next"
+hyprctl --batch "
+keyword monitor $monitor,$res,$pos,$scale,transform,$next;
+keyword input:touchdevice:transform $next;
+keyword input:tablet:transform $next
+"
