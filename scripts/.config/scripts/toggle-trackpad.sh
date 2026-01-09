@@ -25,10 +25,12 @@ if [ "$CURRENT_STATE" = "enabled" ]; then
         hyprctl keyword device[$trackpad]:enabled false >/dev/null 2>&1
     done <<< "$TRACKPADS"
     echo "disabled" > "$STATE_FILE"
+    notify-send "Trackpad" "Disabled"
 else
     # Enable trackpads
     while IFS= read -r trackpad; do
         hyprctl keyword device[$trackpad]:enabled true >/dev/null 2>&1
     done <<< "$TRACKPADS"
     echo "enabled" > "$STATE_FILE"
+    notify-send "Trackpad" "Enabled"
 fi
