@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Calendar
+Comment=Google Calendar
+Exec=omarchy-launch-webapp https://calendar.google.com/
+Terminal=false
+Type=Application
+StartupNotify=true
