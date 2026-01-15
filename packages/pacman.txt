@@ -1,0 +1,4 @@
+bitwarden
+keyd
+fish
+stow
