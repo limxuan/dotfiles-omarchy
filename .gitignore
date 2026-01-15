@@ -1,1 +1,4 @@
 applications/.local/share/applications/mimeinfo.cache
+
+fish/.config/fish/conf.d/fish_frozen_*.fish
+fish/.config/fish/fish_variables
