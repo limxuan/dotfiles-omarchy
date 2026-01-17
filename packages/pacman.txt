@@ -2,3 +2,4 @@ bitwarden
 keyd
 fish
 stow
+telegram-desktop

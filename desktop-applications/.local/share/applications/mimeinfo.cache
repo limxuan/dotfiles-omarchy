@@ -139,7 +139,5 @@ video/x-ogm+ogg=mpv.desktop;
 video/x-theora=mpv.desktop;
 video/x-theora+ogg=mpv.desktop;
 x-scheme-handler/pttp=CiscoPacketTracerPtsa-9.0.0.desktop;
-x-scheme-handler/tg=org.telegram.desktop._2eba6d53432885968b06d2fd51f87f4b.desktop;
-x-scheme-handler/tonsite=org.telegram.desktop._2eba6d53432885968b06d2fd51f87f4b.desktop;
 x-scheme-handler/zoommtg=Zoom.desktop;
 x-scheme-handler/zoomus=Zoom.desktop;
