@@ -4,7 +4,7 @@
 STATE_FILE="/tmp/trackpad_state"
 
 # Find all trackpad devices (both ELAN and Synaptics)
-TRACKPADS=$(hyprctl devices -j | jq -r '.mice[] | select(.name | test("touchpad|elan.*mouse|synaptics"; "i")) | .name')
+TRACKPADS=$(hyprctl devices -j | jq -r '.mice[] | select(.name | test("touchpad|elan.*mouse|synaptics|syna"; "i")) | .name')
 
 if [ -z "$TRACKPADS" ]; then
     notify-send "Trackpad" "No trackpad found"

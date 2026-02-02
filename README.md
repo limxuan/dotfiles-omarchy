@@ -1,6 +1,7 @@
 # Setups
 ## Launch 🚀
 ```
+sudo pacman -Syyu
 git clone https://github.com/limxuan/dotfiles-omarchy
 cd dotfiles-omarchy
 chmod 777 bootstrap.sh
