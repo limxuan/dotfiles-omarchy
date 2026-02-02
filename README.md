@@ -3,16 +3,23 @@
 ```
 git clone https://github.com/limxuan/dotfiles-omarchy
 cd dotfiles-omarchy
-chmod 77 bootstrap.sh
+chmod 777 bootstrap.sh
 ./bootstrap.sh
 ```
 ## Omarchy
 - Disable screensaver: Omarchy Menu > Trigger > Toggle > Screensaver
 
+## Alacritty
+- Install > Terminal > Alacritty
+
 ## Bitwarden
-- Enable Show Tray Icon & Close to Tray
+- Show Tray Icon
+- Close to Tray
+- Start automatically on login
+
 #### SSH Setup
 - Enable SSH Agent in Settings > SSH Agent
+- Ask authorisation > Remember until vault is locked
 
 ## Chromium
 ### Extensions
