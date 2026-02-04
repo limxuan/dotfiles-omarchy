@@ -1,7 +1,3 @@
-# Used for tmux session handling
 sesh-bin
-
-# Screenshot management
 snipaste
-
-# Task management
+ticktick
