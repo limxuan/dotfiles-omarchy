@@ -29,3 +29,11 @@ chmod 777 bootstrap.sh
 - [uBlock Origin Lite](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh?hl=en)
 - [Vimium C](https://chromewebstore.google.com/detail/vimium-c-all-by-keyboard/hfjbmagddngcpeloejdejnfgbamkjaeg?hl=en)
 - [SponsorBlock](https://chromewebstore.google.com/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone?hl=en)
+
+## Limine Setup
+#### For dualbooting
+- To prevent limine from having a timeout edit `/boot/limine.conf`
+```
+timeout: 0
+default_entry: none
+```
