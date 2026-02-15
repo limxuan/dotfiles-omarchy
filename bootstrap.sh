@@ -36,6 +36,8 @@ remove_if_real() {
   fi
 }
 
+remove_if_real /etc/keyd
+remove_if_real /etc/libinput
 remove_if_real ~/.config/starship.toml
 remove_if_real ~/.config/nvim
 remove_if_real ~/.config/fish
