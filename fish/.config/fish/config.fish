@@ -32,6 +32,7 @@ bind \co open_lazygit
 bind \cg edit_command 
 bind \cs check_tmux
 bind \ce edit_clipboard
+bind \ct open_ws
 
 zoxide init fish | source
 starship init fish | source
@@ -43,3 +44,4 @@ mkdir -p $XDG_CONFIG_HOME/fish/conf.d
 # source ~/.config/scripts/init-ssh-agent.fish
 
 set -Ux JAVA_HOME /usr/lib/jvm/java-25-openjdk
+mise activate fish | source
