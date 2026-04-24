@@ -1,19 +1,6 @@
 # Setups
-## Launch 🚀
-```
-sudo pacman -Syyu
-git clone https://github.com/limxuan/dotfiles-omarchy
-cd dotfiles-omarchy
-chmod 777 bootstrap.sh
-./bootstrap.sh
-```
-## Omarchy
-- Disable screensaver: Omarchy Menu > Trigger > Toggle > Screensaver
-
-## Alacritty
-- Install > Terminal > Alacritty
-
-## Bitwarden
+## 1. Setup Bitwarden SSH Agent
+### Bitwarden Settings
 - Show Tray Icon
 - Close to Tray
 - Start automatically on login
@@ -21,6 +8,19 @@ chmod 777 bootstrap.sh
 #### SSH Setup
 - Enable SSH Agent in Settings > SSH Agent
 - Ask authorisation > Remember until vault is locked
+## 2. Launch 🚀
+```
+sudo pacman -Syyu
+git clone git@github.com:limxuan/dotfiles-omarchy.git
+cd dotfiles-omarchy
+chmod 777 bootstrap.sh
+sudo ./bootstrap.sh
+```
+## Omarchy
+- Disable screensaver: Omarchy Menu > Trigger > Toggle > Screensaver
+
+## Alacritty
+- Install > Terminal > Alacritty
 
 ## Chromium
 ### Extensions
