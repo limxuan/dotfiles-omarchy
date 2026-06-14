@@ -46,7 +46,6 @@ remove_if_real ~/.config/tmux
 remove_if_real ~/.config/waybar
 remove_if_real ~/.config/alacritty
 remove_if_real ~/.config/omarchy/themes
-remove_if_real ~/.local/share/applications
 
 # --- Stow system-level configs ----------------------------------------------
 echo "[+] Stowing keyd..."
@@ -57,7 +56,6 @@ sudo systemctl enable --now keyd.service
 echo "[+] Stowing dotfiles..."
 stow \
   alacritty \
-  desktop-applications \
   fish \
   hypr \
   nvim \
