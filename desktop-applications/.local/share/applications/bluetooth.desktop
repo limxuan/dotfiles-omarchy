@@ -1,4 +1,0 @@
-[Desktop Entry]
-Name=bluetooth
-Comment=open bluetooth TUI
-Exec= omarchy-launch-bluetooth

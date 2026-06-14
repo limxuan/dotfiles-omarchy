@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Vesktop
-Comment=Discord client
-Exec=vesktop
-Terminal=false
-Type=Application
-Icon=/home/limxuan/.local/share/applications/icons/Discord.png
-StartupNotify=true

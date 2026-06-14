@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Zen Browser
-Comment=Modern privacy-focused browser
-Exec= /usr/local/bin/zen-browser %U
-Terminal=false
-Type=Application
-Icon=zen-browser
-Categories=Network;WebBrowser;
