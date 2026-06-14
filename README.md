@@ -16,6 +16,21 @@ cd dotfiles-omarchy
 chmod 777 bootstrap.sh
 sudo ./bootstrap.sh
 ```
+
+## Scripts
+
+### `install-packages.sh`
+Install or update packages from `packages/pacman.txt` (official repos) and `packages/aur.txt` (AUR via yay). Also regenerates desktop entries.
+```bash
+./install-packages.sh
+```
+
+### `setup-desktop-entries.sh`
+Generate `.desktop` files from declarative definitions in `packages/apps.sh`. Edit `packages/apps.sh` to add/remove web apps, TUI apps, or omarchy shortcuts, then run:
+```bash
+./setup-desktop-entries.sh
+```
+
 ## Omarchy
 - Disable screensaver: Omarchy Menu > Trigger > Toggle > Screensaver
 
